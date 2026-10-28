@@ -169,7 +169,115 @@
 
 ## 4. Test Cases — Pihak Kantin
 
-Test case untuk fitur login, verifikasi data pengajuan, penyelesaian pesanan, dan logout.
+### TC-PK-001 — Login dengan kredensial valid
+
+- **Preconditions:** Akun Pihak Kantin sudah terdaftar dan dapat digunakan.
+- **Test Steps:**
+  1. Buka halaman login.
+  2. Masukkan username dan password yang valid.
+  3. Klik tombol Login.
+  4. Amati halaman yang ditampilkan setelah login.
+- **Test Data:** Akun pengujian Pihak Kantin yang valid.
+- **Expected Result:** Pengguna berhasil login dan diarahkan ke halaman utama Pihak Kantin.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-PK-002 — Login dengan password salah
+
+- **Preconditions:** Akun Pihak Kantin sudah terdaftar.
+- **Test Steps:**
+  1. Buka halaman login.
+  2. Masukkan username yang valid.
+  3. Masukkan password yang salah.
+  4. Klik tombol Login.
+  5. Amati respons sistem.
+- **Test Data:** Username valid dan password tidak valid.
+- **Expected Result:** Sistem menolak login dan menampilkan pesan kesalahan.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-PK-003 — Menambahkan menu makan baru
+
+- **Preconditions:** Pengguna sudah login sebagai Pihak Kantin dan memiliki akses ke fitur pengelolaan menu makan.
+- **Test Steps:**
+  1. Buka halaman pengelolaan menu makan.
+  2. Pilih fitur untuk menambahkan menu baru.
+  3. Isi informasi menu sesuai kolom yang tersedia.
+  4. Klik tombol Simpan atau tombol sejenis.
+  5. Periksa apakah menu baru muncul pada halaman menu makan.
+- **Test Data:** Informasi menu makan menggunakan data pengujian yang tidak sensitif.
+- **Expected Result:** Menu makan berhasil disimpan dan langsung ditampilkan pada halaman menu tanpa perlu login ulang.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-PK-004 — Menambahkan menu makan dengan data tidak lengkap
+
+- **Preconditions:** Pengguna sudah login sebagai Pihak Kantin dan memiliki akses ke fitur pengelolaan menu makan.
+- **Test Steps:**
+  1. Buka halaman pengelolaan menu makan.
+  2. Pilih fitur untuk menambahkan menu baru.
+  3. Isi formulir menu, tetapi kosongkan salah satu kolom wajib.
+  4. Klik tombol Simpan atau tombol sejenis.
+  5. Amati respons sistem.
+- **Test Data:** Data menu makan dengan salah satu kolom wajib tidak diisi.
+- **Expected Result:** Sistem menolak penyimpanan menu yang tidak lengkap dan menampilkan informasi validasi sesuai aturan sistem.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-PK-005 — Memverifikasi pengajuan makan
+
+- **Preconditions:** Pengguna sudah login sebagai Pihak Kantin dan tersedia pengajuan makan yang perlu diverifikasi.
+- **Test Steps:**
+  1. Buka halaman daftar pengajuan makan.
+  2. Pilih salah satu pengajuan yang perlu diverifikasi.
+  3. Periksa informasi pengajuan.
+  4. Lakukan tindakan verifikasi sesuai fitur yang tersedia.
+  5. Periksa perubahan status pengajuan.
+- **Test Data:** Data pengajuan makan fiktif untuk keperluan pengujian.
+- **Expected Result:** Pengajuan berhasil diproses sesuai aturan sistem dan statusnya diperbarui dengan benar.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-PK-006 — Menyelesaikan pesanan makan
+
+- **Preconditions:** Pengguna sudah login sebagai Pihak Kantin dan tersedia pesanan makan yang dapat diproses.
+- **Test Steps:**
+  1. Buka halaman daftar pesanan makan.
+  2. Pilih pesanan yang akan diproses.
+  3. Periksa informasi pesanan.
+  4. Klik tombol untuk menyelesaikan pesanan jika tersedia.
+  5. Periksa status pesanan setelah tindakan dilakukan.
+- **Test Data:** Data pesanan makan fiktif untuk keperluan pengujian.
+- **Expected Result:** Pesanan berhasil ditandai selesai dan statusnya diperbarui sesuai aturan sistem.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-PK-007 — Menyelesaikan pesanan yang belum memenuhi persyaratan
+
+- **Preconditions:** Pengguna sudah login sebagai Pihak Kantin dan tersedia pesanan yang belum memenuhi persyaratan untuk diselesaikan.
+- **Test Steps:**
+  1. Buka halaman daftar pesanan makan.
+  2. Pilih pesanan yang belum memenuhi persyaratan untuk diselesaikan.
+  3. Coba lakukan tindakan penyelesaian pesanan.
+  4. Amati respons sistem dan perubahan status pesanan.
+- **Test Data:** Pesanan pengujian dengan kondisi yang belum memenuhi persyaratan penyelesaian.
+- **Expected Result:** Sistem mencegah penyelesaian pesanan yang belum memenuhi persyaratan sesuai aturan sistem.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-PK-008 — Memverifikasi pengajuan dengan data tidak lengkap
+
+- **Preconditions:** Pengguna sudah login sebagai Pihak Kantin dan tersedia pengajuan makan dengan informasi yang tidak lengkap.
+- **Test Steps:**
+  1. Buka halaman daftar pengajuan makan.
+  2. Pilih pengajuan dengan informasi yang tidak lengkap.
+  3. Periksa informasi pengajuan.
+  4. Coba lakukan tindakan verifikasi.
+  5. Amati respons sistem dan perubahan status pengajuan.
+- **Test Data:** Data pengajuan pengujian dengan informasi yang tidak lengkap.
+- **Expected Result:** Sistem menangani pengajuan sesuai aturan validasi dan tidak meloloskan pengajuan yang tidak memenuhi persyaratan.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
 
 ## 5. Test Cases — Karyawan
 
