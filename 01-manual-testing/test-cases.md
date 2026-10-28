@@ -281,7 +281,171 @@
 
 ## 5. Test Cases — Karyawan
 
-Test case untuk fitur registrasi, login, check-in, melihat menu makan, melihat riwayat, memberikan rating, dan logout.
+### TC-KRY-001 — Login dengan kredensial valid
+
+- **Preconditions:** Akun karyawan sudah terdaftar dan dapat digunakan.
+- **Test Steps:**
+  1. Buka halaman login.
+  2. Masukkan username dan password yang valid.
+  3. Klik tombol Login.
+  4. Amati halaman yang ditampilkan setelah login.
+- **Test Data:** Akun pengujian karyawan yang valid.
+- **Expected Result:** Pengguna berhasil login dan diarahkan ke halaman utama karyawan.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-002 — Login dengan password salah
+
+- **Preconditions:** Akun karyawan sudah terdaftar.
+- **Test Steps:**
+  1. Buka halaman login.
+  2. Masukkan username yang valid.
+  3. Masukkan password yang salah.
+  4. Klik tombol Login.
+  5. Amati respons sistem.
+- **Test Data:** Username valid dan password tidak valid.
+- **Expected Result:** Sistem menolak login dan menampilkan pesan kesalahan.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-003 — Registrasi akun karyawan dengan data valid
+
+- **Preconditions:** Pengguna belum memiliki akun dan halaman registrasi dapat diakses.
+- **Test Steps:**
+  1. Buka halaman registrasi karyawan.
+  2. Isi seluruh kolom wajib dengan data yang valid.
+  3. Klik tombol Daftar atau tombol sejenis.
+  4. Amati respons sistem.
+- **Test Data:** Data identitas fiktif untuk pengujian.
+- **Expected Result:** Sistem memproses registrasi sesuai aturan dan memberikan informasi bahwa proses berhasil.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-004 — Registrasi dengan kolom wajib kosong
+
+- **Preconditions:** Pengguna belum memiliki akun dan halaman registrasi dapat diakses.
+- **Test Steps:**
+  1. Buka halaman registrasi karyawan.
+  2. Isi formulir registrasi, tetapi kosongkan salah satu kolom wajib.
+  3. Klik tombol Daftar atau tombol sejenis.
+  4. Amati respons sistem.
+- **Test Data:** Data registrasi fiktif dengan salah satu kolom wajib tidak diisi.
+- **Expected Result:** Sistem menolak registrasi yang tidak lengkap dan menampilkan informasi validasi sesuai aturan sistem.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-005 — Check-in karyawan
+
+- **Preconditions:** Karyawan sudah login dan fitur check-in dapat diakses.
+- **Test Steps:**
+  1. Buka halaman check-in.
+  2. Lakukan proses check-in sesuai mekanisme yang tersedia.
+  3. Amati respons sistem.
+  4. Periksa apakah status check-in tercatat.
+- **Test Data:** Akun pengujian karyawan yang valid.
+- **Expected Result:** Sistem memproses check-in dan menampilkan status sesuai kondisi serta aturan yang berlaku.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-006 — Check-in tanpa login
+
+- **Preconditions:** Pengguna belum login dan belum memiliki sesi autentikasi aktif.
+- **Test Steps:**
+  1. Buka halaman check-in melalui URL atau navigasi yang tersedia.
+  2. Coba lakukan proses check-in tanpa login.
+  3. Amati respons sistem.
+- **Test Data:** Pengguna tanpa sesi login.
+- **Expected Result:** Sistem menolak akses ke fitur check-in dan meminta pengguna login terlebih dahulu.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+  ### TC-KRY-007 — Melihat daftar menu makan
+
+- **Preconditions:** Karyawan sudah login dan halaman menu makan dapat diakses.
+- **Test Steps:**
+  1. Buka halaman menu makan.
+  2. Amati daftar menu yang ditampilkan.
+  3. Periksa informasi menu yang tersedia.
+- **Test Data:** Akun pengujian karyawan yang valid.
+- **Expected Result:** Sistem menampilkan daftar menu makan sesuai data yang tersedia.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+  ### TC-KRY-008 — Mengakses menu makan tanpa login
+
+- **Preconditions:** Pengguna belum login dan tidak memiliki sesi autentikasi aktif.
+- **Test Steps:**
+  1. Buka halaman menu makan melalui URL atau navigasi yang tersedia.
+  2. Amati apakah daftar menu dapat diakses.
+- **Test Data:** Pengguna tanpa sesi login.
+- **Expected Result:** Sistem menerapkan aturan akses yang berlaku dan tidak menampilkan informasi yang seharusnya hanya dapat diakses oleh pengguna yang sudah login.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-009 — Melihat riwayat makan
+
+- **Preconditions:** Karyawan sudah login dan memiliki akses ke fitur riwayat makan.
+- **Test Steps:**
+  1. Buka halaman riwayat makan.
+  2. Amati daftar riwayat yang ditampilkan.
+  3. Periksa informasi riwayat yang tersedia.
+- **Test Data:** Akun pengujian karyawan dengan data riwayat yang sesuai.
+- **Expected Result:** Sistem menampilkan riwayat makan sesuai data yang tercatat untuk akun karyawan tersebut.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-010 — Memastikan riwayat makan tidak menampilkan data karyawan lain
+
+- **Preconditions:** Karyawan sudah login dan tersedia data riwayat dari lebih dari satu akun pengujian.
+- **Test Steps:**
+  1. Login menggunakan akun karyawan A.
+  2. Buka halaman riwayat makan.
+  3. Periksa apakah data yang ditampilkan hanya milik akun karyawan A.
+  4. Jika tersedia, bandingkan dengan data milik akun karyawan B menggunakan akun pengujian yang terpisah.
+- **Test Data:** Data riwayat dari dua akun karyawan fiktif.
+- **Expected Result:** Sistem hanya menampilkan riwayat yang sesuai dengan akun karyawan yang sedang login.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-011 — Memberikan rating menu makan
+
+- **Preconditions:** Karyawan sudah login dan fitur rating menu makan tersedia.
+- **Test Steps:**
+  1. Buka halaman menu makan atau halaman yang menyediakan fitur rating.
+  2. Pilih menu yang ingin diberi rating.
+  3. Berikan rating sesuai pilihan yang tersedia.
+  4. Kirim atau simpan rating.
+  5. Amati respons sistem.
+- **Test Data:** Akun pengujian karyawan dan menu makan yang tersedia.
+- **Expected Result:** Sistem menyimpan rating dan menampilkan konfirmasi atau perubahan sesuai perilaku yang dirancang.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-012 — Mengirim rating tanpa memilih nilai
+
+- **Preconditions:** Karyawan sudah login dan fitur rating menu makan tersedia.
+- **Test Steps:**
+  1. Buka halaman yang menyediakan fitur rating menu makan.
+  2. Pilih menu yang ingin diberi rating.
+  3. Jangan memilih nilai rating.
+  4. Klik tombol Kirim atau Simpan.
+  5. Amati respons sistem.
+- **Test Data:** Akun pengujian karyawan dan menu makan yang tersedia tanpa nilai rating yang dipilih.
+- **Expected Result:** Sistem menolak pengiriman rating jika nilai merupakan kolom wajib dan menampilkan informasi validasi.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
+
+### TC-KRY-013 — Logout dari akun Karyawan
+
+- **Preconditions:** Karyawan sudah login ke sistem.
+- **Test Steps:**
+  1. Klik menu atau tombol Logout.
+  2. Amati halaman yang ditampilkan setelah logout.
+  3. Jika memungkinkan, coba akses kembali halaman yang memerlukan autentikasi melalui navigasi browser.
+- **Test Data:** Akun pengujian karyawan yang sudah login.
+- **Expected Result:** Pengguna berhasil logout dan diarahkan ke halaman login. Halaman yang memerlukan autentikasi tidak dapat diakses kembali tanpa login.
+- **Actual Result:** Belum dicatat dalam dokumentasi portofolio.
+- **Status:** Belum ditentukan.
 
 ## 6. Catatan
 
