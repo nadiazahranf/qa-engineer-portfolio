@@ -1,0 +1,27 @@
+{
+	"id": "e9f8g7h6-5432-10fe-dcba-9876543210ab",
+	"name": "School API Environment",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "https://api.school-example.com",
+			"enabled": true
+		},
+		{
+			"key": "admin_email",
+			"value": "adminsd1im@gmail.com",
+			"enabled": true
+		},
+		{
+			"key": "admin_password",
+			"value": "adminsd1im@gmail.com",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment"
+}
