@@ -22,13 +22,10 @@ Dokumentasi ini disusun berdasarkan pengalaman magang saya sebagai QA di PT Tiga
 
 ## Project Files
 
-Bagian ini akan dilengkapi secara bertahap dengan materi portofolio yang disusun secara mandiri, meliputi:
-
-- Dokumentasi test case
-- Skrip automation testing
-- Hasil eksekusi pengujian
-
-
+- [testcases.md](./testcases.md) — Dokumentasi skenario pengujian, test steps, test data, expected result, actual result, dan status pengujian.
+- [tests](./tests/) — Kumpulan skrip automation testing menggunakan Playwright.
+- [pages](./pages/) — Kumpulan Page Object Model (POM) untuk mengelola locator dan interaksi halaman.
+- [testexecutionreport.md](./testexecutionreport.md) — Dokumentasi hasil eksekusi pengujian, termasuk jumlah test case, status pass/fail, dan temuan selama pengujian.
 
 ## Confidentiality Notice
 
