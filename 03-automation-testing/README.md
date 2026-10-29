@@ -14,11 +14,11 @@ Dokumentasi ini disusun berdasarkan pengalaman magang saya sebagai QA di PT Tiga
 
 ## Tools and Technologies
 
-- Playwright
-- JavaScript
-- Node.js
-- Visual Studio Code
-- Git dan GitHub
+- Test Automation Framework: Playwright (@playwright/test)
+- Programming Language: JavaScript (Node.js)
+- Design Pattern: Page Object Model (POM)
+- IDE: Visual Studio Code
+- Version Control: Git & GitHub
 
 ## Project Files
 
@@ -27,6 +27,8 @@ Bagian ini akan dilengkapi secara bertahap dengan materi portofolio yang disusun
 - Dokumentasi test case
 - Skrip automation testing
 - Hasil eksekusi pengujian
+
+
 
 ## Confidentiality Notice
 
