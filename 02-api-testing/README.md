@@ -22,12 +22,9 @@ Dokumentasi ini disusun berdasarkan pengalaman pengujian API menggunakan Postman
 
 ## Project Files
 
-- Skenario API Testing.
-- Test case API.
-- Contoh request dan response.
-- Validasi status code dan struktur respons.
-
-Contoh yang dipublikasikan akan menggunakan skenario dan data simulasi yang aman untuk portofolio publik.
+- [api-tests/](api-tests/) — Koleksi pengujian API (*Postman Collection* & *Environment*):
+  - [environment.json](api-tests/environment.json) — Konfigurasi environment & variabel API.
+  - [school_management_api.postman_collection.json](api-tests/school_management_api.postman_collection.json) — Koleksi skrip pengujian API endpoint.
 
 ## Confidentiality Notice
 
