@@ -42,6 +42,8 @@ Telkom University
 
 Portofolio ini berisi dokumentasi dan contoh proyek pengujian perangkat lunak, termasuk test case, bug report, API testing, dan automation testing.
 
----
+- [01-manual-testing](./01-manual-testing/) — Dokumentasi manual testing, test case, bug report, dan test report.
+- [02-api-testing](./02-api-testing/) — Dokumentasi dan koleksi pengujian API menggunakan Postman.
+- [03-automation-testing](./03-automation-testing/) — Skrip automation testing menggunakan Playwright dan JavaScript.
 
 Terima kasih telah mengunjungi portofolio saya!
