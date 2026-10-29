@@ -1,18 +1,18 @@
-# Portofolio Automation Testing
+# Automation Testing
 
-## Gambaran Proyek
+## Project Overview
 
 Bagian ini mendokumentasikan pengalaman saya dalam melakukan otomatisasi pengujian perangkat lunak menggunakan Playwright dan JavaScript.
 
 Dokumentasi ini disusun berdasarkan pengalaman magang saya sebagai QA di PT Tiga Serangkai Pustaka Mandiri. Materi yang dipublikasikan akan disiapkan khusus untuk portofolio dan tidak menggunakan kode sumber asli atau informasi rahasia milik perusahaan.
 
-## Pengalaman Automation Testing
+## Testing Activities
 
 - Membuat dan menjalankan skrip pengujian otomatis menggunakan Playwright dan JavaScript.
 - Menggunakan pendekatan Page Object Model (POM) untuk mengorganisasi kode yang berkaitan dengan halaman aplikasi.
 - Menyusun dokumentasi test case sebagai acuan pelaksanaan pengujian.
 
-## Perangkat dan Teknologi
+## Tools and Technologies
 
 - Playwright
 - JavaScript
@@ -20,7 +20,7 @@ Dokumentasi ini disusun berdasarkan pengalaman magang saya sebagai QA di PT Tiga
 - Visual Studio Code
 - Git dan GitHub
 
-## Dokumentasi
+## Project Files
 
 Bagian ini akan dilengkapi secara bertahap dengan materi portofolio yang disusun secara mandiri, meliputi:
 
@@ -28,6 +28,6 @@ Bagian ini akan dilengkapi secara bertahap dengan materi portofolio yang disusun
 - Skrip automation testing
 - Hasil eksekusi pengujian
 
-## Catatan
+## Confidentiality Notice
 
 Kode sumber asli dan materi internal perusahaan tidak dipublikasikan dalam repository ini. Portofolio ini merangkum pengalaman pengujian yang relevan.
