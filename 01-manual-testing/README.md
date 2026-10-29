@@ -1,8 +1,8 @@
-# Manual Testing — SIKMA
+# Manual Testing 
 
 ## Project Overview
 
-Dokumentasi portofolio ini disusun berdasarkan pengalaman pengujian manual pada SIKMA (Sistem Informasi Konter Makan) saat menjalani magang sebagai Quality Assurance Intern di PT Pindad (Persero).
+Dokumentasi portofolio ini disusun berdasarkan pengalaman pengujian manual saat menjalani magang sebagai Quality Assurance Intern di PT Pindad (Persero).
 
 Pengujian mencakup empat role pengguna, yaitu Admin Pusat, Admin Divisi, Pihak Kantin, dan Karyawan, dengan fokus pada pengujian fungsional, validasi alur kerja, identifikasi bug, dan retesting.
 
