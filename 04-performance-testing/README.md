@@ -70,10 +70,10 @@ Pada skenario 75 virtual users, ramp-up period 5 detik menghasilkan waktu respon
 
 ## Dokumentasi
 
-- [Test Plan](test-plan/testplan.md)
+- [Test Plan](test-plan/test-plan.md)
 - [Ringkasan Hasil Pengujian](test-results/test-results-summary.md)
-- [Analisis Hasil Pengujian](test-results/analysis.md)
-- [File JMeter](jmeter/challenges-performance.jmx)
+- [Analisis Hasil Pengujian](test-results/test-results-summary.md)
+- [File JMeter](jmeter/)
 - [Bukti Pengujian](evidence/)
 
 ## Batasan Pengujian
