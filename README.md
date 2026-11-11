@@ -45,5 +45,6 @@ Portofolio ini berisi dokumentasi dan contoh proyek pengujian perangkat lunak, t
 - [01-manual-testing](./01-manual-testing/) — Dokumentasi manual testing, test case, bug report, dan test report.
 - [02-api-testing](./02-api-testing/) — Dokumentasi dan koleksi pengujian API menggunakan Postman.
 - [03-automation-testing](./03-automation-testing/) — Skrip automation testing menggunakan Playwright dan JavaScript.
+- [04-performance-testing](./04-performance-testing/) — Dokumentasi dan hasil pengujian performa aplikasi menggunakan Apache JMeter
 
 Terima kasih telah mengunjungi portofolio saya!
