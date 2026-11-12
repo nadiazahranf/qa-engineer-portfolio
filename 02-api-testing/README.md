@@ -1,31 +1,52 @@
-# API Testing
+# API Testing — Restful Booker
 
-## Project Overview
+## Gambaran Umum Proyek
 
-Bagian ini mendokumentasikan pengalaman saya dalam melakukan pengujian API sebagai bagian dari aktivitas Quality Assurance (QA).
+Proyek ini merupakan dokumentasi pengujian API pada aplikasi **Restful Booker** menggunakan Postman. Pengujian dilakukan untuk memvalidasi fungsi API, respons server, serta penanganan berbagai skenario positif dan negatif.
 
-Dokumentasi ini disusun berdasarkan pengalaman pengujian API menggunakan Postman selama menjalani magang sebagai QA. 
+## Alat dan Teknologi
 
-## Testing Activities
+- **Postman** — Menjalankan pengujian API dan membuat test script.
+- **JavaScript** — Menulis assertion untuk validasi respons.
+- **Restful Booker API** — Aplikasi API yang menjadi objek pengujian.
 
-- Melakukan pengujian API menggunakan Postman.
-- Mengirim request ke endpoint API untuk memeriksa respons sistem.
-- Memverifikasi respons API berdasarkan hasil yang diharapkan.
-- Mendukung proses identifikasi dan dokumentasi temuan pengujian.
+## Ruang Lingkup Pengujian
 
-## Perangkat dan Teknologi
+Pengujian mencakup beberapa fungsi utama:
 
-- Postman
-- REST API
-- HTTP Request dan Response
-- JSON
+- Authentication — Membuat token autentikasi dan menguji kredensial tidak valid.
+- Get Booking — Mengambil daftar booking dan detail booking.
+- Create Booking — Membuat data booking baru.
+- Update Booking — Memperbarui seluruh dan sebagian data booking.
+- Delete Booking — Menghapus data booking dan memverifikasi penghapusannya.
+- Negative Testing — Menguji kondisi seperti data tidak lengkap, ID tidak valid, dan request tanpa autentikasi.
+- Response Validation — Memvalidasi status code, response body, dan waktu respons.
 
-## Project Files
+## Struktur Proyek
 
-- [api-tests/](api-tests/) — Koleksi pengujian API (*Postman Collection* & *Environment*):
-  - [environment.json](api-tests/environment.json) — Konfigurasi environment & variabel API.
-  - [school_management_api.postman_collection.json](api-tests/school_management_api.postman_collection.json) — Koleksi skrip pengujian API endpoint.
+- `test-plan/` — Dokumentasi rencana dan konfigurasi pengujian API.
+- `test-cases/` — Dokumentasi skenario dan kasus pengujian API.
+- `postman/` — File Postman Collection dan Environment.
+- `test-results/` — Rekapitulasi hasil dan analisis pengujian.
+- `evidence/` — Screenshot bukti pelaksanaan pengujian.
 
-## Confidentiality Notice
+## Pelaksanaan Pengujian
 
-Informasi internal perusahaan, endpoint privat, kredensial, dan data pengujian asli yang bersifat rahasia tidak dipublikasikan dalam repository ini. Seluruh contoh tambahan akan disiapkan secara mandiri untuk menunjukkan pemahaman terhadap pengujian API.
+Pengujian dilakukan menggunakan Postman dengan total 13 request yang mencakup authentication, booking operations, dan negative testing.
+
+Setiap request dilengkapi dengan test script untuk memvalidasi status code, response body, dan response time.
+
+Validasi waktu respons menggunakan target pengujian di bawah 2.000 ms. Target tersebut merupakan batas yang ditetapkan untuk proyek ini, bukan SLA resmi dari Restful Booker.
+
+## Temuan Pengujian
+
+Beberapa hal yang ditemukan selama pengujian:
+
+- Seluruh request utama berhasil dijalankan sesuai hasil yang diharapkan.
+- Request Get Booking IDs sempat mengalami waktu respons 3.024 ms pada percobaan pertama, kemudian berhasil memenuhi target pada percobaan berikutnya.
+- Request Create Booking dengan field `totalprice` yang tidak disertakan menghasilkan respons `500 Internal Server Error`. Hal ini dicatat sebagai temuan yang perlu dievaluasi lebih lanjut karena validasi input idealnya memberikan respons error yang lebih informatif.
+
+## Catatan
+
+- Pengujian dilakukan pada public demo API Restful Booker.
+- Hasil pengujian dapat dipengaruhi oleh kondisi server dan jaringan.
